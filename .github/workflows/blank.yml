@@ -25,8 +25,8 @@ jobs:
       # 获取仓库源码
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        with:
-          ref: 'gitpage'
+        #with:
+         # ref: 'gitpage'
             
 
       # 构建和部署
@@ -36,7 +36,7 @@ jobs:
           #rm -rf github-pages-deploy-action-temp-deployment-folder
           pwd
           ls -al
-          #npm install
+          npm install
           #rm node_modules/puppeteer/.local-chromium/linux-686378/chrome-linux/chrome
           node index
 

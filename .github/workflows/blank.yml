@@ -37,9 +37,6 @@ jobs:
           mkdir baidu
           wget www.qq.com
           wget www.qq.com
-          wget www.qq.com
-          wget www.qq.com
-          wget www.qq.com
           
          
       # 发布

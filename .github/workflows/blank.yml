@@ -35,9 +35,15 @@ jobs:
           npm install
          
       # 发布
-      - name: upload files
-        uses: actions/upload-artifact@master
-        with:
-          name: files
-          path: ./node_modules/
+      #- name: upload files
+       # uses: actions/upload-artifact@master
+        #with:
+         # name: files
+          #path: ./node_modules/
           #node index
+          
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages

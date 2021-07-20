@@ -51,3 +51,4 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         with:
           BRANCH: main
+          folder: ./

@@ -39,4 +39,10 @@ jobs:
           mkdir baidu
           cd baidu
           wget www.baidu.com
+          
+      - name: Upload artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: firmware
+          path: ./baidu/
           #node index

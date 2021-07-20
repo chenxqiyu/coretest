@@ -30,7 +30,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name:  Shell Scripts
         run: |
-          #rm -rf github-pages-deploy-action-temp-deployment-folder
+          rm -rf github-pages-deploy-action-temp-deployment-folder
           pwd
           ls -al
           npm install

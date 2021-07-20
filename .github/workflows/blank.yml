@@ -36,4 +36,7 @@ jobs:
           pwd
           ls -al
           #npm install
-          node index
+          mkdir baidu
+          cd baidu
+          wget www.baidu.com
+          #node index

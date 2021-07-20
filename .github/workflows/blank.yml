@@ -30,11 +30,12 @@ jobs:
       # Runs a set of commands using the runners shell
       - name:  Shell Scripts
         run: |
-          rm -rf github-pages-deploy-action-temp-deployment-folder
+          #rm -rf github-pages-deploy-action-temp-deployment-folder
           pwd
           ls -al
-          npm install
-          rm node_modules/puppeteer/.local-chromium/linux-686378/chrome-linux/chrome
+          #npm install
+          #rm node_modules/puppeteer/.local-chromium/linux-686378/chrome-linux/chrome
+          node index
 
       # 发布
       #- name: Upload Files
@@ -50,5 +51,5 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gitpage
           folder: ./
-          CLEAN: true
+          #CLEAN: true
           #single-commit: true

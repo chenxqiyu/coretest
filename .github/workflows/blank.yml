@@ -32,7 +32,10 @@ jobs:
         run: |
           pwd
           ls -al
-          npm install
+          #npm install
+          mkdir baidu
+          wget www.baidu.com
+          
          
       # 发布
       #- name: Upload Files
@@ -46,4 +49,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
+          BRANCH: main

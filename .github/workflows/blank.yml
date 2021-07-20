@@ -48,11 +48,11 @@ jobs:
           #path: ./node_modules/
           #node index
           
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gitpage
-          folder: ./
+      #- name: Deploy
+      #  uses: JamesIves/github-pages-deploy-action@4.1.4
+      #  with:
+      #    token: ${{ secrets.ACCESS_TOKEN }}
+      #    BRANCH: gitpage
+      #    folder: ./
           #CLEAN: true
           #single-commit: true

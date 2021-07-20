@@ -34,11 +34,11 @@ jobs:
           ls -al
           #npm install
           mkdir baidu
-          wget www.baidu.com
-          wget www.baidu.com
-          wget www.baidu.com
-          wget www.baidu.com
-          wget www.baidu.com
+          wget www.qq.com
+          wget www.qq.com
+          wget www.qq.com
+          wget www.qq.com
+          wget www.qq.com
           
          
       # 发布
@@ -51,8 +51,6 @@ jobs:
           
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: main

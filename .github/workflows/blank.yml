@@ -32,9 +32,13 @@ jobs:
         run: |
           pwd
           ls -al
-          npm install
-          #mkdir baidu
-          #wget www.baidu.com
+          #npm install
+          mkdir baidu
+          wget www.baidu.com
+          wget www.baidu.com
+          wget www.baidu.com
+          wget www.baidu.com
+          wget www.baidu.com
           
          
       # 发布

@@ -57,3 +57,4 @@ jobs:
           BRANCH: main
           folder: ./
           CLEAN: true
+          single-commit: true

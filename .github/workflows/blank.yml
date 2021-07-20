@@ -35,5 +35,5 @@ jobs:
         run: |
           pwd
           ls -al
-          npm install
+          #npm install
           node index

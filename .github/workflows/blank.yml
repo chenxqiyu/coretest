@@ -33,11 +33,10 @@ jobs:
           rm -rf github-pages-deploy-action-temp-deployment-folder
           pwd
           ls -al
-          rm -rf *.html.*
           #npm install
-          #mkdir baidu
-          #wget www.qq.com
-          #wget www.qq.com
+          mkdir baidu
+          wget www.qq.com
+          wget www.qq.com
           
          
       # 发布
@@ -52,7 +51,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: main
+          BRANCH: gitpage
           folder: ./
           CLEAN: true
           #single-commit: true

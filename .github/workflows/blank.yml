@@ -49,4 +49,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        with:
           BRANCH: main

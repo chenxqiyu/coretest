@@ -49,5 +49,5 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gitpage
           folder: ./
-          CLEAN: true
-          #single-commit: true
+          #CLEAN: true
+          single-commit: true

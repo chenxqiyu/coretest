@@ -25,6 +25,9 @@ jobs:
       # 获取仓库源码
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          ref: 'gitpage'
+            
 
       # 构建和部署
       # Runs a set of commands using the runners shell
